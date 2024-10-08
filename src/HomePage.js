@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Button, Navbar, Container, Nav } from 'react-bootstrap'; // Import de react-bootstrap
 import logo from './logo.png'; // Assurez-vous que le chemin est correct
 
 const HomePage = () => {
@@ -22,21 +23,23 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* Barre de navigation */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '10px', backgroundColor: '#f0f0f0' }}>
-        <h2>Application de Test de Réaction</h2>
-        <div>
-          <button onClick={goToHelp}>Aide</button>
-          <button onClick={goToAbout}>À propos</button>
-        </div>
-      </nav>
+      {/* Barre de navigation avec Bootstrap */}
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand>Application de Test de Réaction</Navbar.Brand>
+          <Nav className="ml-auto">
+            <Button variant="outline-primary" onClick={goToHelp} style={{ marginRight: '10px' }}>Aide</Button>
+            <Button variant="outline-primary" onClick={goToAbout}>À propos</Button>
+          </Nav>
+        </Container>
+      </Navbar>
 
       {/* Contenu principal */}
-      <img src={logo} alt="Logo" style={{ width: '100px' }} />
-
-      {/* Bouton "Démarrer le test" */}
-      <div>
-        <button onClick={startTest} style={{ padding: '10px 20px', fontSize: '16px' }}>Démarrer le test</button>
+      <div className="text-center" style={{ padding: '50px' }}>
+        <img src={logo} alt="Logo" style={{ width: '100px' }} />
+        <div style={{ marginTop: '20px' }}>
+          <Button variant="primary" onClick={startTest}>Démarrer le test</Button>
+        </div>
       </div>
     </div>
   );

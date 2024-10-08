@@ -5,6 +5,8 @@ import ReactionTest from './Reactiontest';
 import HomePage from './HomePage';
 import About from './About';
 import Help from './Help';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
