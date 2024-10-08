@@ -17,7 +17,7 @@ const HomePage = () => {
 
   // Fonction pour aller à la page d'aide (vous pouvez modifier cette fonction selon vos besoins)
   const goToHelp = () => {
-    alert('Page d\'aide (non encore implémentée)'); // Exemple d'alerte pour l'aide
+    navigate('/help'); // Exemple d'alerte pour l'aide
   };
 
   return (
