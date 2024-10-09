@@ -1,0 +1,6 @@
+/* src/styles/App.css */
+body {
+    background-color: #1a5b92; /* Couleur de fond du site */
+    margin: 0; /* Supprimez la marge par défaut */
+    color: white; /* Couleur du texte (facultatif, selon vos besoins) */
+}

@@ -1,0 +1,20 @@
+/* src/styles/Navbar.css */
+.navbar {
+    background-color: #1a5b92; /* Couleur de fond de la Navbar */
+}
+
+.navbar-logo {
+    width: 175px; /* Ajustez la largeur du logo ici */
+    height: auto; /* Garde les proportions du logo */
+}
+
+.navbar .btn-custom {
+    background-color: #ffc525; /* Couleur de fond des boutons */
+    color: #000000; /* Couleur du texte des boutons */
+    border: none; /* Supprime la bordure par défaut des boutons */
+}
+
+.navbar .btn-custom:hover {
+    background-color: #ffb700; /* Couleur du bouton au survol (facultatif) */
+    color: #fafafa; /* Assurez-vous que le texte est toujours lisible */
+}

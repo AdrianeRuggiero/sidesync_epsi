@@ -1,0 +1,16 @@
+/* src/styles/CustomButton.css */
+.custom-button {
+    background-color: #ffc525; /* Couleur de fond */
+    color: #000000; /* Couleur du texte */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 12px; /* Arrondir les bords */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 18px; /* Taille de la police */
+    cursor: pointer; /* Changer le curseur au survol */
+    transition: background-color 0.3s; /* Animation de transition */
+}
+
+.custom-button:hover {
+    background-color: #ffb700; /* Couleur au survol */
+    color: #fafafa; /* Couleur du texte au survol */
+}

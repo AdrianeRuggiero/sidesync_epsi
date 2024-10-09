@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Layout from './components/Layout'; // Importez le Layout
 
 const ReactionTest = () => {
   const [imageId, setImageId] = useState(null);
@@ -59,26 +60,27 @@ const ReactionTest = () => {
   };
 
   return (
-    <div>
-      <h1>Test de Réaction - Droite ou Gauche</h1>
-      {isCountingDown ? (
-        <div>
-          <h2>Ready in {countdown}</h2> {/* Affiche le compte à rebours */}
-        </div>
-      ) : (
-        <>
-          {imageId && <img src={`./logo.svg`} alt="Test" />} {/* Remplacez par vos images */}
+    <Layout> {/* Utilisez Layout pour encapsuler le contenu */}
+      <div>
+        <h1>Test de Réaction - Droite ou Gauche</h1>
+        {isCountingDown ? (
           <div>
-            <button onClick={() => handleResponse('left')}>Gauche</button>
-            <button onClick={() => handleResponse('right')}>Droite</button>
+            <h2>Ready in {countdown}</h2> {/* Affiche le compte à rebours */}
           </div>
-        </>
-      )}
-      {feedback && <p>{feedback}</p>}
-      {reactionTime && <p>Temps de réaction: {reactionTime} secondes</p>}
-    </div>
+        ) : (
+          <>
+            {imageId && <img src={`./logo.svg`} alt="Test" />} {/* Remplacez par vos images */}
+            <div>
+              <button onClick={() => handleResponse('left')}>Gauche</button>
+              <button onClick={() => handleResponse('right')}>Droite</button>
+            </div>
+          </>
+        )}
+        {feedback && <p>{feedback}</p>}
+        {reactionTime && <p>Temps de réaction: {reactionTime} secondes</p>}
+      </div>
+    </Layout>
   );
 };
 
 export default ReactionTest;
-

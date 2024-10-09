@@ -6,6 +6,7 @@ import HomePage from './HomePage';
 import About from './About';
 import Help from './Help';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/App.css';
 
 
 function App() {
