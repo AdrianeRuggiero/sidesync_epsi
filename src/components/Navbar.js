@@ -31,7 +31,9 @@ const CustomNavbar = () => {
           <img src={logo} alt="Logo" className="navbar-logo" /> {/* Utilisation de la classe CSS pour le logo */}
         </BootstrapNavbar.Brand>
 
-        <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
+        <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav">
+          <span className="navbar-toggler-icon"></span> {/* Icône hamburger personnalisée */}
+        </BootstrapNavbar.Toggle>
 
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -63,3 +65,4 @@ const CustomNavbar = () => {
 };
 
 export default CustomNavbar;
+

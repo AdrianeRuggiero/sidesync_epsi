@@ -15,6 +15,35 @@
 }
 
 .navbar .btn-custom:hover {
-    background-color: #ffb700; /* Couleur du bouton au survol (facultatif) */
+    background-color: #ffb700; /* Couleur du bouton au survol */
     color: #fafafa; /* Assurez-vous que le texte est toujours lisible */
+}
+
+/* Modifier la couleur de fond du bouton hamburger */
+.navbar-toggler {
+    background-color: #ffc525 !important; /* Même couleur que les boutons */
+    border: none; /* Supprime la bordure */
+}
+
+/* Masquer les lignes de l'icône hamburger */
+.navbar-toggler-icon {
+    background-image: none; /* Supprime l'image par défaut des lignes */
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after {
+    content: none; /* Supprime complètement les lignes */
+}
+
+/* Supprimer la bordure supplémentaire */
+.navbar-toggler[aria-expanded="false"] {
+    background-color: transparent; /* Assurez-vous que le fond est transparent */
+}
+
+/* Styles spécifiques au menu hamburger pour petits écrans */
+@media (max-width: 991px) { /* Cible les petits écrans (tablettes et mobiles) */
+    .navbar-nav .btn-custom {
+        width: 100%; /* Même taille pour tous les boutons dans le menu hamburger */
+        margin-bottom: 10px; /* Séparation entre les boutons */
+    }
 }
