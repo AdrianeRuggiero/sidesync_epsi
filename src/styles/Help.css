@@ -1,0 +1,19 @@
+/* src/styles/Help.css */
+.help-section {
+    text-align: left;
+    margin-top: 30px;
+    line-height: 1.6;
+  }
+  
+  .help-section ol {
+    padding-left: 20px;
+  }
+  
+  .help-section li {
+    margin-bottom: 20px;
+  }
+  
+  .help-section h2 {
+    margin-bottom: 20px;
+  }
+  
