@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import ImageSlide from './components/ImageSlide';
 import CustomButton from './components/CustomButton';
 import './styles/Reactiontest.css';
+import monFichierPDF from './assets/my_results.pdf'; // Importez votre PDF
 
 const importAll = (r) => {
   let images = {};
@@ -77,8 +78,13 @@ const ReactionTest = () => {
   };
 
   const handleDownloadResults = () => {
-    console.log('Télécharger les résultats');
-  };
+    const link = document.createElement('a');
+    link.href = monFichierPDF; // Utilisez le chemin importé
+    link.download = 'mes_resultats.pdf'; // Nom du fichier lors du téléchargement
+    document.body.appendChild(link);
+    link.click(); // Simulez un clic sur le lien pour déclencher le téléchargement
+    document.body.removeChild(link); // Supprimez le lien après le téléchargement
+};
 
   return (
     <Layout>
@@ -111,3 +117,4 @@ const ReactionTest = () => {
 };
 
 export default ReactionTest;
+
