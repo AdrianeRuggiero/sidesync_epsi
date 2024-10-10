@@ -1,24 +1,33 @@
-/* styles/ReactionTest.css */
-.image-slide {
+.image-slider {
     width: 400px; /* Ajustez la largeur selon vos besoins */
     height: 300px; /* Ajustez la hauteur selon vos besoins */
-    object-fit: cover; /* Cela garantit que l'image s'adapte à la taille sans déformer */
-    margin: 0 auto; /* Centrer l'image */
-  }
-  
-  .buttons {
+    position: relative; /* Pour permettre un positionnement absolu des images */
+    margin: 0 auto; /* Centrer le slider */
+    overflow: hidden; /* Pour cacher les débordements */
+}
+
+.image-slider img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: 100%; /* L'image prend toute la hauteur du conteneur */
+    object-fit: contain; /* Maintenir l'aspect ratio et afficher l'image complète */
+    position: absolute; /* Position absolue pour le contrôle sur l'affichage */
+    top: 50%; /* Centrer l'image verticalement */
+    left: 50%; /* Centrer l'image horizontalement */
+    transform: translate(-50%, -50%); /* Ajustement pour centrer parfaitement */
+}
+
+.buttons {
     display: flex; /* Utiliser flexbox pour aligner les boutons */
     justify-content: center; /* Centrer les boutons horizontalement */
     gap: 20px; /* Espacement entre les boutons */
     margin-top: 20px; /* Marge entre le diaporama et les boutons */
-  }
-  
-  .custom-button {
+}
+
+.custom-button {
     padding: 10px 20px; /* Ajoutez du rembourrage pour les boutons */
     font-size: 16px; /* Taille de police */
     cursor: pointer; /* Pointeur au survol */
     border: none; /* Supprimer la bordure par défaut */
     border-radius: 5px; /* Coins arrondis */
     transition: background-color 0.3s; /* Transition douce pour l'effet de survol */
-  }
-  
+}
