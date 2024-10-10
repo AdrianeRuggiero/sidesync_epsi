@@ -1,0 +1,34 @@
+/* src/styles/HomePage.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Ajustez l'espacement si nécessaire */
+}
+
+h1 {
+    font-size: 2.5rem; /* Taille pour grands écrans */
+    text-align: center; /* Centrer le texte */
+}
+
+h5 {
+    font-size: 1.5rem; /* Taille pour grands écrans */
+    text-align: center; /* Centrer le texte */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Ajustez la taille pour mobile */
+    }
+
+    h5 {
+        font-size: 1.2rem; /* Ajustez la taille pour mobile */
+    }
+}
+
+.no-ellipsis {
+    white-space: normal; /* Permet au texte de se plier */
+    overflow: visible; /* Assure que le texte est visible */
+}
+
