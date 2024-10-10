@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Sidesync
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sidesync est une application interactive conçue pour tester la capacité des utilisateurs à reconnaître leur droite et leur gauche, tout en mesurant leur temps de réaction. L'application est développée en utilisant React pour le frontend et inclut une logique de test de réaction, un affichage d'images et des fonctionnalités de génération de PDF pour les résultats.
 
-## Available Scripts
+## Fonctionnalités
 
-In the project directory, you can run:
+- Test de réaction basé sur des images montrant la droite ou la gauche.
+- Mesure du temps de réponse des utilisateurs.
+- Génération d'un rapport PDF contenant les résultats du test.
+- Interface utilisateur réactive et conviviale.
 
-### `npm start`
+## Technologies utilisées
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend :**
+  - [React](https://reactjs.org/)
+  - [React-Bootstrap](https://react-bootstrap.github.io/) pour le design et la mise en page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Backend :**
+  - (À compléter si tu as une partie backend, sinon, tu peux supprimer cette section)
 
-### `npm test`
+- **Base de données :**
+  - (À compléter si tu utilises une base de données, sinon, tu peux supprimer cette section)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Pour utiliser le projet, suis les étapes suivantes :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone le dépôt :**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/tonnomutilisateur/sidesync_epsi.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigue dans le répertoire du projet :**
 
-### `npm run eject`
+   ```bash
+   cd sidesync_epsi
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Installe les dépendances :**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Démarre l'application :**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
 
-## Learn More
+L'application sera disponible à l'adresse http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contribuer
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Si tu souhaites contribuer à ce projet, n'hésite pas à soumettre une pull request ou à ouvrir une issue pour discuter des modifications souhaitées.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet est sous licence MIT. Pour plus d'informations, consulte le fichier LICENSE.
